@@ -1466,7 +1466,7 @@ foreach ($able as $key=>$value) {
 
 		<?php
 
-		#$phpSelf = $_SERVER[PHP_SELF] ? $_SERVER[PHP_SELF] : $_SERVER[SCRIPT_NAME];
+		$phpSelf = $_SERVER[PHP_SELF] ? $_SERVER[PHP_SELF] : $_SERVER[SCRIPT_NAME];
 
 		#$disFuns=get_cfg_var("disable_functions");
 
