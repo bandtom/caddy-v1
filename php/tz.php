@@ -1,35 +1,18 @@
 <?php
 
-
 error_reporting(0); //抑制所有错误信息
 @header("content-Type: text/html; charset=utf-8"); //语言强制
 ob_start();
 date_default_timezone_set('Asia/Shanghai');//此句用于消除时间差
-
 $title = 'PHP探针';
-
 $version = "v0.4.7"; //版本号
-
-
-
 define('HTTP_HOST', preg_replace('~^www\.~i', '', $_SERVER['HTTP_HOST']));
-
-
-
 $time_start = microtime_float();
-
-
-
 function memory_usage() 
 {
-
 	$memory	 = ( ! function_exists('memory_get_usage')) ? '0' : round(memory_get_usage()/1024/1024, 2).'MB';
-
 	return $memory;
-
 }
-
-
 // 计时
 
 function microtime_float() 
