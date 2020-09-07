@@ -12,15 +12,24 @@ i386, amd64；
 
 对应的下载链接如下：
 https://dl.lamp.sh/files/caddy_linux_386
+
 https://dl.lamp.sh/files/caddy_linux_amd64
+
 https://dl.lamp.sh/files/caddy_linux_arm6
+
 https://dl.lamp.sh/files/caddy_linux_arm7
+
 https://dl.lamp.sh/files/caddy_linux_arm64
+
 https://dl.lamp.sh/files/caddy_linux_ppc64le
+
 https://dl.lamp.sh/files/caddy_linux_s390x
 
+
 https://dl.lamp.sh/files/caddy_386.exe
+
 https://dl.lamp.sh/files/caddy_amd64.exe
+
 
 ※简单说明：
 Caddy 已经升级到了 V2，所以官方目前已经不提供 V1 的下载链接，导致使用 getcaddy.com 脚本时会出现下载失败的错误。
