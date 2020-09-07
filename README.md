@@ -11,6 +11,7 @@ i386, amd64；
 3. 新增插件 forwardproxy 支持。
 
 对应的下载链接如下：
+
 https://dl.lamp.sh/files/caddy_linux_386
 
 https://dl.lamp.sh/files/caddy_linux_amd64
@@ -24,7 +25,6 @@ https://dl.lamp.sh/files/caddy_linux_arm64
 https://dl.lamp.sh/files/caddy_linux_ppc64le
 
 https://dl.lamp.sh/files/caddy_linux_s390x
-
 
 https://dl.lamp.sh/files/caddy_386.exe
 
