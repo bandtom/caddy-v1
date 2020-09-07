@@ -24,5 +24,3 @@ https://dl.lamp.sh/files/caddy_amd64.exe
 
 ※简单说明：
 Caddy 已经升级到了 V2，所以官方目前已经不提供 V1 的下载链接，导致使用 getcaddy.com 脚本时会出现下载失败的错误。
-
-
