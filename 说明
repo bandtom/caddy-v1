@@ -1,0 +1,29 @@
+下载安装(64位)
+wget -O /usr/bin/caddy https://dl.lamp.sh/files/caddy_linux_amd64
+chmod 755 /usr/bin/caddy
+(32位)
+wget -O /usr/bin/caddy https://dl.lamp.sh/files/caddy_linux_386
+chmod 755 /usr/bin/caddy
+
+在/root目录下创建 caddy 目录并切换至此
+cd /root && mkdir caddy && cd caddy
+
+创建文件并开始编辑 caddy 配置文件 caddy.conf
+
+# 以下全部内容是一个整体，是一个命令，全部复制粘贴到SSH软件中并一起执行！
+echo ":80 {
+ root /usr/local/caddy/www/speeder #分享文件夹路径
+ timeouts none
+ gzip
+ browse
+}" > /root/caddy/caddy.conf
+# 如果要绑定域名，只要把上面第一行的[ :80 { ]改成域名比如[ http://tooyo.ml { ]即可(不需要加端口号了)#
+
+后台运行 caddy
+nohup caddy -conf /root/caddy/caddy.conf &
+
+可以查看 caddy 运行产生的日志
+cat /root/caddy/caddy.log
+
+确认 caddy 运行状态，下面的命令有输出则表示正常
+ps -ef | grep -v grep | grep caddy
