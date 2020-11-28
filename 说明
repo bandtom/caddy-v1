@@ -12,7 +12,7 @@ cd /root && mkdir caddy && cd caddy
 
 # 以下全部内容是一个整体，是一个命令，全部复制粘贴到SSH软件中并一起执行！
 echo ":80 {
- root /usr/local/caddy/www/speeder #分享文件夹路径
+ root /root #分享文件夹路径
  timeouts none
  gzip
  browse
